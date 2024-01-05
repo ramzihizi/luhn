@@ -1,30 +1,61 @@
-# React + TypeScript + Vite
+# Credit Card Validation using the Luhn Algorithm
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Exploring the Luhn algorithm
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-## Expanding the ESLint configuration
+### Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+What things you need to install the software and how to install them.
 
-- Configure the top-level `parserOptions` property like this:
+- [Node.js](https://nodejs.org/) >= 18.6
+- npm >= 10.2
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### Installing
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+A step-by-step series of examples that tell you how to get a development environment running.
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/ramzihizi/luhn.git
+   cd ccard-vite
+   ```
+
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+
+3. **Run the Application**
+
+   Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+   Visit `http://localhost:5173` (or the port indicated in your terminal) in your browser to view the application.
+
+## Running the Tests
+
+Explain how to run the automated tests for this system.
+
+1. **Execute Tests**
+
+   ```bash
+   npm run test
+   ```
+
+   This will run the tests with Vitest.
+
+## Built With
+
+- [React](https://reactjs.org/) - The web framework used
+- [Vite](https://vitejs.dev/) - Build tool
+- [Vitest](https://vitest.dev/) - Testing Framework
+
+## Todos
