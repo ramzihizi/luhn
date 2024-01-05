@@ -7,9 +7,7 @@ const CreditCardForm: React.FC = () => {
   const [cardHolderName, setCardHolderName] = useState<string>("");
   const [expirationDate, setExpirationDate] = useState<string>("");
   const [cvv, setCvv] = useState<string>("");
-  const [message, setMessage] = useState<string>(
-    "Press Submit to verify your credit card information."
-  );
+  const [message, setMessage] = useState<string>("Press Submit to verify");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -44,11 +42,6 @@ const CreditCardForm: React.FC = () => {
   return (
     <form onSubmit={handleSubmit}>
       <div className="flex min-h-full flex-1 flex-col justify-center px-6 py-12 lg:px-8">
-        <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-          <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-            Enter Credit Card
-          </h2>
-        </div>
         <div className="mt-10 sm:mx-auto sm:w-full sm:max-w-sm border-t border-gray-200 pt-10">
           <div className="mt-6 grid grid-cols-4 gap-x-4 gap-y-6">
             <div className="col-span-4">
